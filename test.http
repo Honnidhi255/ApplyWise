@@ -1,0 +1,14 @@
+
+POST http://localhost:8080/api/applications
+Content-Type: application/json
+
+{
+  "company": "Google",
+  "role": "Software Engineer Intern",
+  "status": "Applied"
+}
+###
+GET http://localhost:8080/api/applications
+###
+GET http://localhost:8080/api/applications/999
+
