@@ -2,8 +2,8 @@ import ReactMarkdown from 'react-markdown';
 import { useEffect, useMemo, useState } from 'react'
 import "./App.css"
 
-const API_URL = 'http://localhost:8080/api/applications'
-const AI_URL = 'http://127.0.0.1:8000/api/analyze'
+const API_URL = `${import.meta.env.VITE_API_URL || 'http://localhost:8080'}/api/applications`
+const AI_URL = `${import.meta.env.VITE_AI_URL || 'http://127.0.0.1:8000'}/api/analyze`
 
 const STATUSES = ['Applied', 'Interview', 'Offer', 'Rejected']
 
